@@ -14,6 +14,7 @@ function handleModalBgClick(e) {
     modal.setAttribute("style", "opacity: 0; visibility: hidden");
     modalBg.setAttribute("style", "opacity: 0; visibility: hidden");
   }
+  runStatRender(1969)
 }
 
 
