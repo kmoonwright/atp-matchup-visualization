@@ -14,14 +14,14 @@ function runStatRender(year) {
   d3.select("#custom-circle > svg").remove();
 
   // SVG element params
-  var diameter = 960,
+  let diameter = 960,
     radius = diameter / 2,
     innerRadius = radius - 120;
 
-  var cluster = d3.cluster()
+  let cluster = d3.cluster()
     .size([360, innerRadius]);
 
-  var line = d3.radialLine()
+  let line = d3.radialLine()
     .curve(d3.curveBundle.beta(0.85))
     .radius(function (d) {
       return d.y;
@@ -30,7 +30,7 @@ function runStatRender(year) {
       return d.x / 180 * Math.PI;
     });
 
-  var svg = d3.select('#custom-circle').append("svg")
+  let svg = d3.select('#custom-circle').append("svg")
     .attr("width", diameter)
     .attr("height", diameter)
     .append("g")
@@ -63,10 +63,11 @@ function runStatRender(year) {
       importData.push(entryObj);
     }
   
-    var root = packageHierarchy(importData)
-  
+    // Prepare the root
+    let root = packageHierarchy(importData)
     cluster(root);
   
+    // Create the tree
     node = node
       .data(root.leaves())
       .enter().append("text")
@@ -83,7 +84,7 @@ function runStatRender(year) {
       })
       .on("mouseover", mouseovered)
       .on("mouseout", mouseouted);
-  
+    // Create the links
     link = link
       .data(packageImports(root.leaves()))
       .enter().append("path")
@@ -96,15 +97,13 @@ function runStatRender(year) {
 }
 
 
-  // Construct the package hierarchy from class names.
+// Construct the package hierarchy from class names.
 function packageHierarchy(classes) {
-  var map = {};
-
+  let map = {};
   function find(name, data) {
-    var node = map[name], i;
+    let node = map[name], i;
     if (!node) {
       node = map[name] = data || {name: name, children: []};
-      
       if (name.length) {
         node.parent = find(name.substring(0, i = name.lastIndexOf(".")));
         node.parent.children.push(node);
@@ -113,21 +112,16 @@ function packageHierarchy(classes) {
     }
     return node;
   }
-  classes.forEach(function(d) {
-    find(d.name, d);
-  });
+  classes.forEach(function(d) { find(d.name, d) });
   return d3.hierarchy(map[""]);
 }
 
 // Return a list of imports for the given array of nodes.
 function packageImports(nodes) {
-  var map = {},
-      connections = [];
-      
+  let map = {},
+    connections = [];
   // Compute a map from name to node.
-  nodes.forEach(function(d) {
-    map[d.data.name] = d;
-  });
+  nodes.forEach(function(d) { map[d.data.name] = d });
 
   // Make an array of all player names
   const playerNames = nodes.map(node => node.data.name);
@@ -140,6 +134,5 @@ function packageImports(nodes) {
       connections.push(map[d.data.name].path(map[name]));
     });
   });
-  
   return connections;
 }
