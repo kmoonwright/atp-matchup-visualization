@@ -27,8 +27,8 @@
 
 .modal-close__btn {
   position: absolute;
-  right: 3rem;
-  top: 3rem;
+  right: 1rem;
+  top: 1rem;
   font-size: 1.6rem;
   cursor: pointer;
   padding: 1rem;
