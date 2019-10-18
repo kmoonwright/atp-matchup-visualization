@@ -17,7 +17,6 @@ function handleModalBgClick(e) {
   runStatRender(1969)
 }
 
-
 // Hover highlighting
 function mouseovered(d) {
   node

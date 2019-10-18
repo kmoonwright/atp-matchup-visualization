@@ -11,7 +11,7 @@ let link, node;
 
 function runStatRender(year) {
   // Remove previous data
-  d3.select("#custom-circle > svg").remove();
+  d3.select("#data_circle > svg").remove();
 
   // SVG element params
   let diameter = 960,
@@ -30,7 +30,7 @@ function runStatRender(year) {
       return d.x / 180 * Math.PI;
     });
 
-  let svg = d3.select('#custom-circle').append("svg")
+  let svg = d3.select('#data_circle').append("svg")
     .attr("width", diameter)
     .attr("height", diameter)
     .append("g")
