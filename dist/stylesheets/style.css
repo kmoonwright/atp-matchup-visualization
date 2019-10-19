@@ -1,6 +1,7 @@
 body {
   /* background-image: url('https://trolltennis.com/wp-content/uploads/2017/06/rg81z1e7j1-8.jpg'); */
-  background-image: url('https://us.123rf.com/450wm/alexis84/alexis841207/alexis84120700415/14641029-clay-background-tennis-court-background.jpg?ver=6');
+  /* background-image: url('https://us.123rf.com/450wm/alexis84/alexis841207/alexis84120700415/14641029-clay-background-tennis-court-background.jpg?ver=6'); */
+  background-image: url('clay-square.jpg');
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: antiquewhite;
   /* background-repeat: no-repeat;
@@ -26,13 +27,21 @@ body {
 }
 
 svg {
-  animation:fade 1s ease-in;
-  -webkit-animation:fade 1s ease-in;
+  animation:fadeIn 1s ease-in;
+  animation:fadeOut 1s ease-in;
+  -webkit-animation:fadeIn 1s ease-in;
 }
 
-@keyframes fade {
+@keyframes fadeIn {
   0%   {opacity:0}
   33.333% { opacity: .333}
   66.666% { opacity: .666}
   100% { opacity: 1}
+}
+
+@keyframes fadeOut {
+  0%   {opacity:1}
+  33.333% { opacity: .666}
+  66.666% { opacity: .333}
+  100% { opacity: 0}
 }
