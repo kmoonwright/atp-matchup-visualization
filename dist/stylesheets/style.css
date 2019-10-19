@@ -3,6 +3,8 @@ body {
   background-image: url('https://us.123rf.com/450wm/alexis84/alexis841207/alexis84120700415/14641029-clay-background-tennis-court-background.jpg?ver=6');
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: antiquewhite;
+  /* background-repeat: no-repeat;
+  background-size: 100% 100%; */
 }
 
 .header-container {
