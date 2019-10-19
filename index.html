@@ -46,13 +46,17 @@
   <div class="header-container">
     <h1>ATP Men's Singles Matchups By Year</h1>
     <div class="header__year-selector">
+      <p>Record-Breaking Years:</p>
       <button onclick="runStatRender(1969)">1969</button>
       <button onclick="runStatRender(1974)">1974</button>
       <button onclick="runStatRender(1984)">1984</button>
       <button onclick="runStatRender(2006)">2006</button>
       <button onclick="runStatRender(2011)">2011</button>
       <button onclick="runStatRender(2018)">2018</button>
-      <textarea placeholder="Search for a player..."></textarea>
+      <form>
+        <input type="text" placeholder="Search for a player...">
+        <button type="submit">Search</button>
+      </form>
     </div>
   </div>
 
