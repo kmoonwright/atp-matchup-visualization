@@ -7,9 +7,9 @@
 ## Implementation
 
 ## Functionality & MVP
-* Visualization of all professional men's tennis players by year.
+* Visualization of all professional men's tennis players matchups by year.
 
-# Visualization of average court time
+# Visualization of highest win-loss ratios by year
 
 ## Architecture and Technologies
 * D3 for data visualization

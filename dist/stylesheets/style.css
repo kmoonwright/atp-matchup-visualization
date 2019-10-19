@@ -6,5 +6,17 @@
 
 .main-container {
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
+}
+
+svg {
+  animation:fade 1s ease-in;
+  -webkit-animation:fade 1s ease-in;
+}
+
+@keyframes fade {
+  0%   {opacity:0}
+  33.333% { opacity: .333}
+  66.666% { opacity: .666}
+  100% { opacity: 1}
 }
