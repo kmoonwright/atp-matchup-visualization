@@ -5,3 +5,7 @@ allNodes.forEach((node) => {
     node.style.backgroundColor = "red";
   }
 })
+
+function searchNodes() {
+  
+}
