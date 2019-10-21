@@ -54,9 +54,10 @@
       <button onclick="runStatRender(2006)">2006</button>
       <button onclick="runStatRender(2011)">2011</button>
       <button onclick="runStatRender(2018)">2018</button>
-      <form action="./src/search.js">
+      <form>
         <input type="text" placeholder="Search for a player...">
-        <button type="submit" onclick="searchNodes()">Search</button>
+        <input type="button" value="Search" onclick="searchNodes()">
+        <!-- <button type="submit">Search</button> -->
       </form>
     </div>
   </div>
@@ -68,4 +69,5 @@
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="./src/data_circle.js"></script>
   <script src="./src/index.js"></script>
+  <script src="./src/search.js"></script>
 </body>

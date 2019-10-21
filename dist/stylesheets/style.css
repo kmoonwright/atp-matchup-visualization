@@ -45,3 +45,7 @@ svg {
   66.666% { opacity: .333}
   100% { opacity: 0}
 }
+
+#query {
+  font-weight: 800;
+}
