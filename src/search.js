@@ -6,24 +6,19 @@ function searchNodes() {
     if (nodeText.innerHTML.toUpperCase().includes(searchValue.toUpperCase())) {
       // nodeText.style.backgroundColor = "FFFF00";
       // nodeText.style.fontWeight = 700;
-      
 
-      nodeText.setAttribute('class', 'query')
-  
-      setTimeout(() => {
-        nodeText.setAttribute('class', 'node')
-      }, 2000);
+      let ogStyle = nodeText.style
+      nodeText.setAttribute('style', 'font-weight: 700')
+
       
-      // Object.assign(nodeText.style, {
-        //   fontWeight: 700,
-        
-        // })
-        
-        
-        // debugger
-        // console.log(searchValue)
-        // console.log(node.innerHTML)
-      }
+      // Object.assign(nodeText.style, {fontsize: "20px"})
+      setTimeout(() => {
+        // nodeText.setAttribute('class', {ogStyle})
+        nodeText.style = ogStyle
+      }, 5000);
+    } else if (nodeText.innerHTML.toUpperCase() === searchValue.toUpperCase()) {
+      // mouseOver Event
+    }
   })
   console.log('working')
 }
