@@ -51,12 +51,10 @@ body {
   justify-content: center;
 }
 #data_circle {
-  padding-top: 50px;
   z-index: 999;
 }
 
 svg {
-  margin-top: 20px;
   animation:fadeIn 1s ease-in;
   animation:fadeOut 1s ease-in;
   -webkit-animation:fadeIn 1s ease-in;
