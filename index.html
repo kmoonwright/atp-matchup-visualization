@@ -55,12 +55,11 @@
       <button onclick="runStatRender(2011)">2011</button>
       <button onclick="runStatRender(2018)">2018</button>
       <form onsubmit="return false">
-        <input oninput="searchInput(this.value)"
+        <input oninput="this.value ? searchInput(this.value) : searchInput('*')"
           type="text" 
           placeholder="Search for a player..." 
-          defaultValue="" value=""
-          onfocus="this.value=''"
-          onblur="this.value=''"
+          onfocus="this.value ? searchInput(this.value) : searchInput('*')"
+          onblur="searchInput('*')"
         >
         <input onclick="searchNodes()" type="button" value="Search">
       </form>

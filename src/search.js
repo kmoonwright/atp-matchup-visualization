@@ -6,27 +6,12 @@ function searchInput(searchValue) {
     let ogStyle = nodeText.style
     if (nodeText.innerHTML.toUpperCase().includes(searchValue.toUpperCase())) {
       nodeText.style.fontWeight = 700;
-      nodeText.style.fontStyle = 'italic'
-      // nodeText.setAttribute('style', 'font-weight: 700')
-      
-      // Object.assign(nodeText.style, {fontsize: "20px"})
-      // setTimeout(() => {
-      //   // nodeText.setAttribute('class', {ogStyle})
-      //   nodeText.style = ogStyle
-      // }, 8000);
+      nodeText.style.fontStyle = 'italic';
+      nodeText.style.fontSize = '110%';
     } else if (nodeText.innerHTML.toUpperCase() === searchValue.toUpperCase()) {
       // mouseOver Event
-      console.log('MATCH')
-      nodeText.addEventListener('mouseover', function () {
-        console.log('Event triggered');
-      })
-      var event = new MouseEvent('mouseover', {
-        'view': window,
-        'bubbles': true,
-        'cancelable': true
-      });
-
-      nodeText.dispatchEvent(event);
+      debugger
+      mouseovered(nodeText);
     } else {
       nodeText.style = ogStyle;
     }
