@@ -4,9 +4,8 @@
 }
 
 .node:hover {
-  fill: #000;
+  fill: antiquewhite;
   font-size: 140%;
-  z-index: 1;
 }
 
 .link {

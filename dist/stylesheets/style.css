@@ -15,8 +15,11 @@ body {
   justify-content: space-evenly;
   margin-top: 20px;
 }
-
-.header-container h1 {
+.header__title {
+  display: flex;
+  align-items: center;
+}
+.header__title h1 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: antiquewhite;
   font-size: 40px;
@@ -24,16 +27,19 @@ body {
 .header-container h2 {
   font-size: 20px;
 }
+.header-container img {
+  height: 55px;
+  width: 55px;
+}
 
 .year-buttons {
   display: flex;
-  padding-top: 8px;
+  padding-top: 5px;
   padding-bottom: 8px;
 }
-
 .year-buttons p {
-  padding-right: 8px;
-  border-bottom: 3px solid antiquewhite;
+  padding-right: 5px;
+  border-bottom: 2px solid antiquewhite;
 }
 .year-buttons p:hover {
   color: black;
@@ -44,8 +50,13 @@ body {
   display: flex;
   justify-content: center;
 }
+#data_circle {
+  padding-top: 50px;
+  z-index: 999;
+}
 
 svg {
+  margin-top: 20px;
   animation:fadeIn 1s ease-in;
   animation:fadeOut 1s ease-in;
   -webkit-animation:fadeIn 1s ease-in;
