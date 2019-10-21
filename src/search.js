@@ -10,12 +10,13 @@ function searchInput(searchValue) {
       // nodeText.setAttribute('style', 'font-weight: 700')
       
       // Object.assign(nodeText.style, {fontsize: "20px"})
-      setTimeout(() => {
-        // nodeText.setAttribute('class', {ogStyle})
-        nodeText.style = ogStyle
-      }, 8000);
+      // setTimeout(() => {
+      //   // nodeText.setAttribute('class', {ogStyle})
+      //   nodeText.style = ogStyle
+      // }, 8000);
     } else if (nodeText.innerHTML.toUpperCase() === searchValue.toUpperCase()) {
       // mouseOver Event
+      console.log('MATCH')
       nodeText.addEventListener('mouseover', function () {
         console.log('Event triggered');
       })
@@ -43,11 +44,12 @@ function searchNodes() {
       nodeText.style.fontWeight = 700;
       nodeText.style.fontStyle = 'italic';
 
-      setTimeout(() => {
-        nodeText.style = ogStyle
-      }, 8000);
+      // setTimeout(() => {
+      //   nodeText.style = ogStyle
+      // }, 5000);
     } else if (nodeText.innerHTML.toUpperCase() === searchValue.toUpperCase()) {
       // mouseOver Event
+      console.log('MATCH')
       nodeText.addEventListener('mouseover', function () {
         console.log('Event triggered');
       })
