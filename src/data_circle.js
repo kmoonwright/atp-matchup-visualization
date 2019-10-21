@@ -74,7 +74,7 @@ function runStatRender(year) {
       .attr("class", "node")
       .attr("dy", "0.31em")
       .attr("transform", function (d) {
-        return "rotate(" + (d.x - 90) + ")translate(" + (d.y + 8) + ",0)" + (d.x < 180 ? "" : "rotate(180)");
+        return "rotate(" + (d.x - 90) + ")translate(" + (d.y + 12) + ",0)" + (d.x < 180 ? "" : "rotate(180)");
       })
       .attr("text-anchor", function (d) {
         return d.x < 180 ? "start" : "end";

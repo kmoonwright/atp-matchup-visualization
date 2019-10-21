@@ -10,7 +10,6 @@ function searchInput(searchValue) {
       nodeText.style.fontSize = '110%';
     } else if (nodeText.innerHTML.toUpperCase() === searchValue.toUpperCase()) {
       // mouseOver Event
-      debugger
       mouseovered(nodeText);
     } else {
       nodeText.style = ogStyle;
@@ -29,9 +28,6 @@ function searchNodes() {
       nodeText.style.fontWeight = 700;
       nodeText.style.fontStyle = 'italic';
 
-      // setTimeout(() => {
-      //   nodeText.style = ogStyle
-      // }, 5000);
     } else if (nodeText.innerHTML.toUpperCase() === searchValue.toUpperCase()) {
       // mouseOver Event
       console.log('MATCH')
