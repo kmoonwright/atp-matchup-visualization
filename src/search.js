@@ -7,7 +7,7 @@ function searchInput(searchValue) {
     if (nodeText.innerHTML.toUpperCase().includes(searchValue.toUpperCase())) {
       nodeText.style.fontWeight = 700;
       nodeText.style.fontStyle = 'italic';
-      nodeText.style.fontSize = '110%';
+      nodeText.style.fontSize = '115%';
     } else if (nodeText.innerHTML.toUpperCase() === searchValue.toUpperCase()) {
       // mouseOver Event
       mouseovered(nodeText);
@@ -27,6 +27,8 @@ function searchNodes() {
     if (nodeText.innerHTML.toUpperCase().includes(searchValue.toUpperCase())) {
       nodeText.style.fontWeight = 700;
       nodeText.style.fontStyle = 'italic';
+      nodeText.style.fontSize = '115%';
+
 
     } else if (nodeText.innerHTML.toUpperCase() === searchValue.toUpperCase()) {
       // mouseOver Event

@@ -21,6 +21,24 @@ body {
   color: antiquewhite;
   font-size: 40px;
 }
+.header-container h2 {
+  font-size: 20px;
+}
+
+.year-buttons {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.year-buttons p {
+  padding-right: 8px;
+  border-bottom: 3px solid antiquewhite;
+}
+.year-buttons p:hover {
+  color: black;
+  border-color: black;
+}
 
 .main-container {
   display: flex;
@@ -46,85 +64,3 @@ svg {
   66.666% { opacity: .333}
   100% { opacity: 0}
 }
-
-.buttnugget {
-  color: blue;
-  background-color: yellow;
-  animation:bg 2s ease-in;
-    -webkit-animation:bg 2s ease-in;
-    -moz-animation:bg 2s ease-in;
-    -ms-animation:bg 2s ease-in;
-    -o-animation:bg 2s ease-in;
-}
-
-@-webkit-keyframes bg {
-  0% {
-    background: rgba(255, 165, 0, 1);
-  }
-
-  20% {
-    background: rgba(255, 165, 0, 0.8);
-  }
-
-  50% {
-    background: rgba(255, 165, 0, 0.5);
-  }
-
-  100% {
-    background: rgba(255, 165, 0, 0);
-  }
-}
-/* 
-@-moz-keyframes bg {
-  0% {
-    background: rgba(255, 165, 0, 1);
-  }
-
-  20% {
-    background: rgba(255, 165, 0, 0.8);
-  }
-
-  50% 70% {
-    background: rgba(255, 165, 0, 0.5);
-  }
-
-  100% {
-    background: rgba(255, 165, 0, 0);
-  }
-}
-
-@-ms-keyframes bg {
-  0% {
-    background: rgba(255, 165, 0, 1);
-  }
-
-  20% {
-    background: rgba(255, 165, 0, 0.8);
-  }
-
-  50% 70% {
-    background: rgba(255, 165, 0, 0.5);
-  }
-
-  100% {
-    background: rgba(255, 165, 0, 0);
-  }
-}
-
-@-o-keyframes bg {
-  0% {
-    background: rgba(255, 165, 0, 1);
-  }
-
-  20% {
-    background: rgba(255, 165, 0, 0.8);
-  }
-
-  50% 70% {
-    background: rgba(255, 165, 0, 0.5);
-  }
-
-  100% {
-    background:rgba(255, 165, 0, 0);
-  }
-} */

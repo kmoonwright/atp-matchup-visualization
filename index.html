@@ -47,13 +47,15 @@
     <!-- <img src="./favicon.ico" alt="logo.png"> -->
     <h1>ATP Men's Singles Matchups By Year</h1>
     <div class="header__year-selector">
-      <p>Record-Breaking Years:</p>
-      <button onclick="runStatRender(1969)">1969</button>
-      <button onclick="runStatRender(1974)">1974</button>
-      <button onclick="runStatRender(1984)">1984</button>
-      <button onclick="runStatRender(2006)">2006</button>
-      <button onclick="runStatRender(2011)">2011</button>
-      <button onclick="runStatRender(2018)">2018</button>
+      <h2>Record-Breaking Years:</h2>
+      <div class="year-buttons">
+        <p onclick="runStatRender(1969)">1969</p>
+        <p onclick="runStatRender(1974)">1974</p>
+        <p onclick="runStatRender(1984)">1984</p>
+        <p onclick="runStatRender(2006)">2006</p>
+        <p onclick="runStatRender(2011)">2011</p>
+        <p onclick="runStatRender(2018)">2018</p>
+      </div>
       <form onsubmit="return false">
         <input oninput="this.value ? searchInput(this.value) : searchInput('*')"
           type="text" 
