@@ -30,6 +30,10 @@ body {
   text-decoration: none;
   font-size: 30px;
 }
+.header__link:hover {
+  color: black;
+  border-color: black;
+}
 .header-container h2 {
   font-size: 20px;
 }
@@ -44,8 +48,10 @@ body {
   padding-bottom: 8px;
 }
 .year-buttons p {
-  padding-right: 5px;
+  padding-left: 1px;
+  padding-right: 3px;
   border-bottom: 2px solid antiquewhite;
+  cursor: pointer;
 }
 .year-buttons p:hover {
   color: black;
