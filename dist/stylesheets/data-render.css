@@ -22,7 +22,7 @@
 }
 
 .node--source {
-  fill: #d62728;
+  fill: purple;
 }
 
 .node--target {
@@ -40,5 +40,6 @@
 }
 
 .link--target {
-  stroke: #d62728;
+  /* stroke: #d62728; */
+  stroke: purple;
 }
