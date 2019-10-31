@@ -6,7 +6,7 @@
 * Data files formatted from CSV
 
 ## Background and Overview
-A visualization of head-to-head statistics between professional tennis players, organized by year.
+A visualization of head-to-head statistics between professional tennis players, organized by year and an entire tournament season of the ATP (Association of Tennis Professionals). 
 
 ## Demo
 
@@ -15,7 +15,8 @@ A visualization of head-to-head statistics between professional tennis players, 
 - Authored algorithms for responsive search result highlighting triggered by changes to user input, to provide an intuitive and lively UX.
 - Created a custom CSV file parser to aggregate statistics between nodes, compile relational data, and render the tree, allowing for usage of multiple datasets.
 
-## CSV Parser Extracts Selected Data Set
+## Custom CSV Parser 
+The parser extracts the selected data set from an memoized object to prepare a root node and begin to build relationships between data nodes.
 ```javascript
   d3.csv(rawData[year], function (error, data) {
     if (error) throw error;
