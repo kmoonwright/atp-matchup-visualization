@@ -1,6 +1,7 @@
 .node {
   font: 300 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
   fill: antiquewhite;
+  cursor: pointer;
 }
 
 .node:hover {

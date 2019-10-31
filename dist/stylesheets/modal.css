@@ -37,7 +37,7 @@
 }
 
 .modal-close__btn:hover {
-  color: #b62840;
+  color: black;
   transform: rotate(-90deg);
 }
 
