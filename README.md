@@ -5,10 +5,12 @@
 * HTML/CSS/JavaScript on the frontend and Node.js on the backend
 * Data files formatted from CSV
 
-## Background and Overview
-A visualization of head-to-head statistics between professional tennis players, organized by year and an entire tournament season of the ATP (Association of Tennis Professionals). 
+![ATP-Matchup-Screenshot][logo]
 
-## Demo
+## Background and Overview
+This project was built to highlight record-breaking tennis performances over the course of a single tournament season by individual players. Hover over a player's name to see their matchups, green lines represent match victories and purple lines represent match defeats. Use the search feature to find players by name, or highlight specific players.
+
+This visualization represents all player matchups between male tennis players at the professional level, organized by year. The featured years highlight the dominance of Rod Laver in 1969, Jimmy Connors in 1974, John McEnroe in 1984, Roger Federer in 2006, and Novak Djokovic in 2011. The statistics for 2018 visualize the last complete set of data from a tournament season.
 
 ## Implementation
 - Formulated a custom hierarchical edge bundling design using the D3 library to visualize win-loss ratios in a single tournament season, to highlight the sport’s record-breaking years.
@@ -49,3 +51,6 @@ The parser extracts the selected data set from an memoized object to prepare a r
 - A synopsis render of subsequent match statistics for the year when selecting a player.
 - Compare the yearly results of multiple players with selectors/filters.
 - In-depth analysis of a single player's results based on court surface specialty (hard, grass, clay).
+
+[logo]: https://github.com/kmoonwright/ATP-Matchup-Visualization/blob/master/dist/assets/screenshot.png
+
