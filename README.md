@@ -5,12 +5,12 @@
 * HTML/CSS/JavaScript on the frontend and Node.js on the backend
 * Data files formatted from CSV
 
+![ATP-Matchup-Screenshot][logo]
+
 ## Background and Overview
 This project was built to highlight record-breaking tennis performances over the course of a single tournament season by individual players. Hover over a player's name to see their matchups, green lines represent match victories and purple lines represent match defeats. Use the search feature to find players by name, or highlight specific players.
 
 This visualization represents all player matchups between male tennis players at the professional level, organized by year. The featured years highlight the dominance of Rod Laver in 1969, Jimmy Connors in 1974, John McEnroe in 1984, Roger Federer in 2006, and Novak Djokovic in 2011. The statistics for 2018 visualize the last complete set of data from a tournament season.
-
-![ATP-Matchup-Screenshot][logo]
 
 ## Implementation
 - Formulated a custom hierarchical edge bundling design using the D3 library to visualize win-loss ratios in a single tournament season, to highlight the sport’s record-breaking years.
