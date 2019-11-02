@@ -4,7 +4,7 @@ const modal = document.querySelector('.modal');
 modalBg.addEventListener('click', handleModalBgClick);
 modal.addEventListener('click', handleModalBgClick);
 
-// modal close 
+// Modal close 
 function handleModalBgClick(e) {
   e.stopPropagation();
   let modalBg = document.querySelector(".modal-bg");
