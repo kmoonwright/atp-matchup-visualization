@@ -53,3 +53,7 @@
 .source__content a {
   color: antiquewhite;
 }
+
+.main__description span {
+  font-weight: 900;
+}

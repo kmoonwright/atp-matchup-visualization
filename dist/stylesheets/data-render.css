@@ -24,6 +24,8 @@
 
 .node--source {
   fill: purple;
+  /* fill: purple; */
+  fill: black;
 }
 
 .node--target {
@@ -42,5 +44,6 @@
 
 .link--target {
   /* stroke: #d62728; */
+  /* stroke: purple; */
   stroke: purple;
 }
