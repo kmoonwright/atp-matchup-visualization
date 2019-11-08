@@ -23,9 +23,9 @@
 }
 
 .node--source {
-  fill: purple;
+  fill: rgb(92, 0, 92);
   /* fill: purple; */
-  fill: black;
+  /* fill: black; */
 }
 
 .node--target {
