@@ -62,7 +62,6 @@ body {
 .main-container {
   display: flex;
   justify-content: center;
-  margin-top: -20px;
 }
 #data_circle {
   z-index: 999;
