@@ -14,7 +14,7 @@ function runStatRender(year) {
   d3.select("#data_circle > svg").remove();
 
   // SVG element params
-  let diameter = 1050,
+  let diameter = 1150,
     radius = diameter / 2,
     innerRadius = radius - 180;
 
